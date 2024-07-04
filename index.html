@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colgroup Maker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Colgroup Maker</h1>
+      <p class="guide">💭 추가 버튼을 눌러 col을 추가하고 마우스를 이용해 너비를 조절해 보세요.</p>
+    </header>
+
+
+    <div class="total-wrap">
+      <div class="maker-wrap">
+        <div class="controls">
+
+          <button id="addBox">
+            <span class="material-symbols-outlined">add </span>
+            <span>추가</span>
+          </button>
+
+          <button id="removeBox">
+            <span class="material-symbols-outlined">
+              remove
+              </span>
+            <span>제거</span>
+          </button>
+
+          <!-- <div class="box-count" id="boxCount">박스 개수: 1</div> -->
+        </div>
+        <div class="box-container" id="boxContainer">
+          <!-- Boxes will be dynamically added here -->
+        </div>
+      </div>
+
+      <div class="colgroup-container">
+        <!-- <h3>Code</h3> -->
+        <div class="title">
+          <span class="info">💭 아래 코드를 table 태그 하단에 붙여 넣으세요.</span>
+          <button id="copyButton">
+            <span class="material-symbols-outlined">
+              content_copy
+              </span>
+            <span>복사</span>
+          </button>
+        </div>
+        <pre id="colgroupDisplay">
+            <colgroup>
+            </colgroup>
+        </pre>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
